@@ -1,0 +1,16 @@
+ @import "tailwindcss";
+@plugin "daisyui";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* small globals */
+html, body, #root { height: 100%; }
+body { @apply bg-base-100 text-base-content; }
+
+
+/* Navbar translucent when at top */
+.nav-transparent { background: transparent; }
+.nav-solid { background: rgba(255,255,255,0.95); backdrop-filter: blur(6px); }
