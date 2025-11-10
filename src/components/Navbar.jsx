@@ -18,8 +18,8 @@ export default function Navbar() {
         <header className={`fixed w-full z-40 transition-all ${scrolled ? 'bg-black/40 shadow-sm' : 'nav-transparent'}`}>
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-6">
-                    <Link to="/" className="text-xl font-bold">Ruhan</Link>
-                    <nav className="hidden md:flex gap-4">
+                    <Link to="/" className=" font-bold"><span className='text-3xl text-orange-400'>Ruhan</span></Link>
+                    <nav className="hidden md:flex gap-4 text-xl">
                         <a href="#home" className={`px-2  ${loc.hash === '#home' || loc.pathname === '/' ? 'text-primary font-semibold' : ''}`}>Home</a>
                         <a href="#projects" className={`px-2 ${loc.hash === '#projects' ? 'text-primary font-semibold' : ''}`}>Projects</a>
                         <a href="#about" className={`px-2 ${loc.hash === '#about' ? 'text-primary font-semibold' : ''}`}>About</a>
