@@ -16,7 +16,7 @@ export default function Navbar() {
 
     return (
         <header className={`fixed w-full z-40 transition-all ${scrolled ? 'bg-black/40 shadow-sm' : 'nav-transparent'}`}>
-            <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div className="container mx-auto px-4 py-3 flex bg-gr items-center justify-between">
                 <div className="flex items-center gap-6">
                     <Link to="/" className=" font-bold"><span className='text-3xl text-orange-400'>Ruhan</span></Link>
                     <nav className="hidden md:flex gap-4 text-xl">
@@ -27,8 +27,8 @@ export default function Navbar() {
                     </nav>
                 </div>
                 <div className="flex items-center gap-3">
-                    <a href="#contact" className="btn btn-sm btn-outline">Contact</a>
-                    <a href="#" className="btn btn-sm btn-primary hidden md:inline">Hire Me</a>
+                    <a href="#contact" className="btn  btn-primary">Contact</a>
+                    <a href="#" className="btn  btn-primary ">Hire Me</a>
                 </div>
             </div>
         </header>
